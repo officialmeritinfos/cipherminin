@@ -48,7 +48,7 @@
                     <div class="single-today-card d-flex align-items-center">
                         <div class="flex-grow-1">
                             <span class="today">Ongoing Investment</span>
-                            <h6>{{number_format($ongoingInvestments->count(),2)}}</h6>
+                            <h6>${{number_format($ongoingInvestments,2)}}</h6>
                         </div>
 
                         <div class="flex-shrink-0 align-self-center">
@@ -60,7 +60,7 @@
                     <div class="single-today-card d-flex align-items-center">
                         <div class="flex-grow-1">
                             <span class="today">Completed Investment</span>
-                            <h6>{{number_format($completedInvestments->count(),2)}}</h6>
+                            <h6>${{number_format($completedInvestments,2)}}</h6>
                         </div>
 
                         <div class="flex-shrink-0 align-self-center">
@@ -73,7 +73,7 @@
                     <div class="single-today-card d-flex align-items-center">
                         <div class="flex-grow-1">
                             <span class="today">Completed Withdrawal</span>
-                            <h6>{{number_format($withdrawals->count(),2)}}</h6>
+                            <h6>${{number_format($withdrawals,2)}}</h6>
                         </div>
 
                         <div class="flex-shrink-0 align-self-center">
@@ -85,7 +85,7 @@
                     <div class="single-today-card d-flex align-items-center">
                         <div class="flex-grow-1">
                             <span class="today">Pending Deposit</span>
-                            <h6>{{number_format($pendingDeposit->count(),2)}}</h6>
+                            <h6>${{number_format($pendingDeposit,2)}}</h6>
                         </div>
 
                         <div class="flex-shrink-0 align-self-center">
@@ -97,7 +97,7 @@
                     <div class="single-today-card d-flex align-items-center">
                         <div class="flex-grow-1">
                             <span class="today">Pending Withdrawal</span>
-                            <h6>{{number_format($pendingWithdrawal->count(),2)}}</h6>
+                            <h6>${{number_format($pendingWithdrawal,2)}}</h6>
                         </div>
 
                         <div class="flex-shrink-0 align-self-center">
