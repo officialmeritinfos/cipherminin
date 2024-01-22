@@ -31,6 +31,18 @@
         <div class="container-fluid">
             @include('templates.notification')
             <div class="row justify-content-center">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-today-card d-flex align-items-center">
+                        <div class="flex-grow-1">
+                            <span class="today">Account Balance</span>
+                            <h6>${{number_format($user->profit,2)}}</h6>
+                        </div>
+
+                        <div class="flex-shrink-0 align-self-center">
+                            <img src="{{asset('dashboard/user/images/icon/user.png')}}" alt="Images">
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-today-card d-flex align-items-center">
@@ -49,6 +61,19 @@
                         <div class="flex-grow-1">
                             <span class="today">Completed Investment</span>
                             <h6>{{number_format($completedInvestments->count(),2)}}</h6>
+                        </div>
+
+                        <div class="flex-shrink-0 align-self-center">
+                            <img src="{{asset('dashboard/user/images/icon/discount.png')}}" alt="Images">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-today-card d-flex align-items-center">
+                        <div class="flex-grow-1">
+                            <span class="today">Completed Withdrawal</span>
+                            <h6>{{number_format($withdrawals->count(),2)}}</h6>
                         </div>
 
                         <div class="flex-shrink-0 align-self-center">
@@ -80,18 +105,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-today-card d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <span class="today">Completed Withdrawal</span>
-                            <h6>{{number_format($withdrawals->count(),2)}}</h6>
-                        </div>
-
-                        <div class="flex-shrink-0 align-self-center">
-                            <img src="{{asset('dashboard/user/images/icon/discount.png')}}" alt="Images">
-                        </div>
-                    </div>
-                </div>
 
 
 
@@ -108,18 +121,6 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-today-card d-flex align-items-center">
-                        <div class="flex-grow-1">
-                            <span class="today">Account Balance</span>
-                            <h6>${{number_format($user->profit,2)}}</h6>
-                        </div>
-
-                        <div class="flex-shrink-0 align-self-center">
-                            <img src="{{asset('dashboard/user/images/icon/user.png')}}" alt="Images">
-                        </div>
-                    </div>
-                </div>
 
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-today-card d-flex align-items-center">
